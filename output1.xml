@@ -1,0 +1,1448 @@
+<players>
+    <player id="1">
+        <stats>
+            <name>Charles Lee</name>
+            <experience>77961.74</experience>
+            <creation_date>2020-10-08T15:23:03.427235</creation_date>
+        </stats>
+        <farmingbots>
+            <farmingbot id="1" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="1" name="positive">
+                        <duration>20.84503</duration>
+                        <timeoccurred>2020-10-09T22:59:15.708769</timeoccurred>
+                        <debuff>
+                            <uuid>"7d849f89-2ea1-4396-9b5b-f58152833089"</uuid>
+                            <description>"Under mother whatever cost big think decision. Wait bill
+                                in everyone woman hotel. Itself some possible since.\nCare if
+                                manager now side. Rather law best daughter."</description>
+                            <effects>
+                                <effect>"room"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="2" name="various">
+                        <duration>21.411037</duration>
+                        <timeoccurred>2021-05-27T07:39:33.958377</timeoccurred>
+                        <debuff>
+                            <uuid>"0d39cd89-e4cc-4f46-9064-15ec09520e36"</uuid>
+                            <description>"Mother weight another recognize best several
+                                administration. Find great everybody down recently lose rock. Three
+                                commercial return consider left.\nMedical black new happen
+                                education."</description>
+                            <effects>
+                                <effect>"describe"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="3" name="chair">
+                        <duration>19.167908</duration>
+                        <timeoccurred>2024-03-21T18:48:53.069074</timeoccurred>
+                        <debuff>
+                            <uuid>"68511b45-4be6-481a-b476-cd72d496f02c"</uuid>
+                            <description>"Night dark experience bit.\nSeek resource edge toward than
+                                research. Party help contain heart she woman brother few.
+                                Professional Mrs any.\nCenter read picture particular state quite
+                                night. Interview own senior wife. Probably candidate computer
+                                movement."</description>
+                            <effects>
+                                <effect>"expect"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="2" is_finished="true">
+                <naturaldisasters>
+                    <naturaldisaster id="4" name="sea">
+                        <duration>9.022743</duration>
+                        <timeoccurred>2021-02-18T11:20:57.38721</timeoccurred>
+                        <debuff>
+                            <uuid>"3ec62940-1463-4f2f-80d3-1007e0b893f1"</uuid>
+                            <description>"Those shoulder two small. Simple energy but call computer.
+                                Myself drop already already alone sister make big.\nCollection he
+                                free drop provide. My tax agree wrong guess half.\nGo focus throw
+                                bit. Until between look rather."</description>
+                            <effects>
+                                <effect>"enter"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="5" name="trouble">
+                        <duration>11.359131</duration>
+                        <timeoccurred>2021-08-24T10:16:56.103765</timeoccurred>
+                        <debuff>
+                            <uuid>"375f4739-98a5-46f2-91b0-67a9a0cc5f6e"</uuid>
+                            <description>"Production moment position look. Wide the how science
+                                success.\nRealize partner fight finally still five. Organization
+                                whole outside guy benefit.\nEvidence other picture push cut young
+                                your. Paper citizen maintain article throw process available."</description>
+                            <effects>
+                                <effect>"project"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="6" name="major">
+                        <duration>21.077425</duration>
+                        <timeoccurred>2021-12-30T13:22:35.679232</timeoccurred>
+                        <debuff>
+                            <uuid>"0ba1d291-691c-4ef6-89b1-3db8a841ab75"</uuid>
+                            <description>"Door himself Republican. Benefit give collection standard
+                                possible time fast. Institution seem history.\nEnough finish by fall
+                                second law. Late wall amount meet call adult eight."</description>
+                            <effects>
+                                <effect>"prevent"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="3" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="7" name="include">
+                        <duration>22.608992</duration>
+                        <timeoccurred>2020-11-07T18:50:34.216007</timeoccurred>
+                        <debuff>
+                            <uuid>"c29d2286-d82b-4a4c-8119-07bb213c029d"</uuid>
+                            <description>"Always environmental three run wind form fast nearly.
+                                Structure seven interesting effect check check tonight
+                                social.\nMyself ground long spend. Strong anyone door himself
+                                point."</description>
+                            <effects>
+                                <effect>"person"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="8" name="religious">
+                        <duration>12.070023</duration>
+                        <timeoccurred>2022-01-18T00:59:41.801585</timeoccurred>
+                        <debuff>
+                            <uuid>"17fa52c0-9802-41da-a8d5-f589e38caae3"</uuid>
+                            <description>"Tax several order board. Everybody weight floor commercial
+                                cost. Especially summer across main great other pick.\nTeach
+                                conference morning catch condition. Discuss radio interesting that
+                                toward change. Continue staff reason difficult east."</description>
+                            <effects>
+                                <effect>"view"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="9" name="sound">
+                        <duration>8.215538</duration>
+                        <timeoccurred>2020-02-11T21:26:51.80638</timeoccurred>
+                        <debuff>
+                            <uuid>"731c421d-8875-4ca9-b0a9-a8433adbe464"</uuid>
+                            <description>"Movie stuff third interest report must him term. Not stage
+                                model large piece degree movie. Do action return century market.
+                                Enjoy policy sport world charge."</description>
+                            <effects>
+                                <effect>"national"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+        </farmingbots>
+    </player>
+    <player id="2">
+        <stats>
+            <name>Dylan Smith</name>
+            <experience>51875.727</experience>
+            <creation_date>2020-07-12T18:28:35.497461</creation_date>
+        </stats>
+        <farmingbots>
+            <farmingbot id="4" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="10" name="need">
+                        <duration>6.9005127</duration>
+                        <timeoccurred>2023-08-16T21:42:53.492388</timeoccurred>
+                        <debuff>
+                            <uuid>"12286f24-1d6b-4a84-bab7-7eded55007a3"</uuid>
+                            <description>"Quite Mr thank. Music little notice buy. Prove game skin
+                                hard site tend politics receive.\nArgue hear road. Coach join draw
+                                street.\nDiscuss carry ground similar whose for note. Herself
+                                product produce."</description>
+                            <effects>
+                                <effect>"step"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="11" name="strategy">
+                        <duration>14.540683</duration>
+                        <timeoccurred>2020-01-27T11:47:45.551606</timeoccurred>
+                        <debuff>
+                            <uuid>"3e512d5c-d819-4ec2-9206-fac378e80b07"</uuid>
+                            <description>"Minute arm friend forget. Himself site suddenly
+                                quite.\nSong section audience yeah as whatever source. Husband
+                                possible hundred per. Matter someone movement art around.\nReady
+                                health ahead save exist. Bad agree arm."</description>
+                            <effects>
+                                <effect>"size"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="12" name="trip">
+                        <duration>22.001781</duration>
+                        <timeoccurred>2024-02-15T16:33:15.861633</timeoccurred>
+                        <debuff>
+                            <uuid>"19946a2a-7cc2-4f80-bd90-094569738e12"</uuid>
+                            <description>"Add rise today behind star. From party grow throw dog same
+                                over theory. But manage himself by price institution sound
+                                stage.\nThem expect hand plan. Generation establish there it itself
+                                story."</description>
+                            <effects>
+                                <effect>"item"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="5" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="13" name="your">
+                        <duration>5.660147</duration>
+                        <timeoccurred>2023-09-15T07:06:42.296682</timeoccurred>
+                        <debuff>
+                            <uuid>"ac19b764-d12d-4a8f-bd05-760212bcfb05"</uuid>
+                            <description>"Site decade check radio pretty represent week. Would
+                                million event factor set system choose try. Pretty realize threat
+                                serve drop lawyer reveal."</description>
+                            <effects>
+                                <effect>"defense"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="14" name="minute">
+                        <duration>16.931335</duration>
+                        <timeoccurred>2022-06-04T09:09:13.310483</timeoccurred>
+                        <debuff>
+                            <uuid>"83446891-7125-4244-8094-37965e23a0ad"</uuid>
+                            <description>"Method of may use support. Few positive agent produce.
+                                Ball operation lay still garden fast American.\nWhere main state.
+                                Score guy season training allow. Include miss foreign future if
+                                power hundred half."</description>
+                            <effects>
+                                <effect>"outside"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="15" name="foot">
+                        <duration>6.2442164</duration>
+                        <timeoccurred>2022-03-31T05:13:59.625705</timeoccurred>
+                        <debuff>
+                            <uuid>"44455360-f1c5-46d5-9de6-8a26c92264e9"</uuid>
+                            <description>"Everyone simply admit investment player throw. Manager
+                                relationship them teach space.\nAt sometimes every inside.\nWall
+                                suggest their operation doctor before language. Think small market
+                                during hold stock president perhaps."</description>
+                            <effects>
+                                <effect>"thank"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="6" is_finished="true">
+                <naturaldisasters>
+                    <naturaldisaster id="16" name="collection">
+                        <duration>6.9238496</duration>
+                        <timeoccurred>2020-11-08T20:07:26.114954</timeoccurred>
+                        <debuff>
+                            <uuid>"2ae0296a-0884-43c7-9cb3-e7b18128cf9e"</uuid>
+                            <description>"Weight put gun but professional ask. Cup around surface
+                                child. Safe policy type dog tough wife these.\nExperience hair
+                                partner fill style message. Hold easy here them plant. Be kid former
+                                treat course no. Mission star although huge recently yard others."</description>
+                            <effects>
+                                <effect>"possible"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="17" name="new">
+                        <duration>23.770966</duration>
+                        <timeoccurred>2021-01-09T10:40:30.004012</timeoccurred>
+                        <debuff>
+                            <uuid>"37904feb-7b8e-4ddb-bf73-e7babd89afa2"</uuid>
+                            <description>"Nation keep Mr bring stay environment.\nNetwork let either
+                                manager people method style. Senior mouth community state scene
+                                represent sit movement. Expect wait there heavy
+                                operation.\nEducation care that wonder also. Hold decision a here
+                                form week return."</description>
+                            <effects>
+                                <effect>"election"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="18" name="her">
+                        <duration>16.028461</duration>
+                        <timeoccurred>2022-05-14T23:56:48.820772</timeoccurred>
+                        <debuff>
+                            <uuid>"51e73c78-ed45-4450-af04-7bc155204db7"</uuid>
+                            <description>"Pretty month consumer form tend movie whole. Fine send
+                                character already whether.\nAnything player arrive eat Mr example
+                                alone. Right truth serve break feel training road themselves."</description>
+                            <effects>
+                                <effect>"mother"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+        </farmingbots>
+    </player>
+    <player id="3">
+        <stats>
+            <name>Robert Mclaughlin</name>
+            <experience>49958.57</experience>
+            <creation_date>2021-04-07T09:52:05.738601</creation_date>
+        </stats>
+        <farmingbots>
+            <farmingbot id="7" is_finished="true">
+                <naturaldisasters>
+                    <naturaldisaster id="19" name="main">
+                        <duration>4.443351</duration>
+                        <timeoccurred>2022-06-11T23:48:51.790132</timeoccurred>
+                        <debuff>
+                            <uuid>"41d9fc95-7c7d-4366-8077-875b251ece8b"</uuid>
+                            <description>"Social few entire down mouth specific. Agreement onto job
+                                mind.\nOfficer green and not enough.\nHowever brother choose factor
+                                across do.\nWhatever traditional free police finally. Education
+                                fight after want mouth recent doctor."</description>
+                            <effects>
+                                <effect>"man"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="20" name="often">
+                        <duration>10.622956</duration>
+                        <timeoccurred>2021-10-09T21:47:42.472553</timeoccurred>
+                        <debuff>
+                            <uuid>"ee4957fa-0758-4e3b-8197-ff673984cd22"</uuid>
+                            <description>"Much sense last story. Provide upon song win page. Apply
+                                prepare over vote wind.\nChance would investment performance
+                                election range police. Talk trade door child within.\nVarious loss
+                                mouth end. Usually treat meeting stay southern executive decade."</description>
+                            <effects>
+                                <effect>"prove"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="21" name="war">
+                        <duration>8.820147</duration>
+                        <timeoccurred>2020-07-15T00:04:09.546188</timeoccurred>
+                        <debuff>
+                            <uuid>"b32f6257-450b-4d07-84ff-4e24007c4d2a"</uuid>
+                            <description>"Where start the character plan difference simply. Should
+                                official where sometimes sea beautiful. Law artist food per early
+                                democratic local behind.\nProfessional radio career.\nPattern short
+                                attention which image stock also. Development stand chance quite."</description>
+                            <effects>
+                                <effect>"no"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="8" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="22" name="political">
+                        <duration>6.2263412</duration>
+                        <timeoccurred>2024-02-14T09:04:38.824627</timeoccurred>
+                        <debuff>
+                            <uuid>"eec7f901-6039-4a59-acfe-32eb85463b12"</uuid>
+                            <description>"Value serve election tend throw during yet. Although
+                                senior away task population. Look security really per.\nKitchen
+                                place reduce fast necessary pay necessary long. Heart huge film
+                                might. Whose wait career wind full change."</description>
+                            <effects>
+                                <effect>"single"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="23" name="line">
+                        <duration>16.89621</duration>
+                        <timeoccurred>2022-11-13T18:50:21.37</timeoccurred>
+                        <debuff>
+                            <uuid>"3d120c8b-ce7c-439d-8aa0-9dfd1c0ebd76"</uuid>
+                            <description>"Total mission order watch argue along move. Keep direction
+                                father strong.\nWatch word because group town clear heart less.
+                                Speak exactly appear enjoy class. Agree outside develop there
+                                despite program."</description>
+                            <effects>
+                                <effect>"one"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="24" name="relate">
+                        <duration>12.27454</duration>
+                        <timeoccurred>2021-11-30T01:13:00.210697</timeoccurred>
+                        <debuff>
+                            <uuid>"d3a6af38-f4f6-45f5-8053-8b4ebe2125a0"</uuid>
+                            <description>"Carry cup start want while truth life. Near agreement fill
+                                cause when wind.\nThink think authority window until. Draw imagine
+                                maintain politics your day."</description>
+                            <effects>
+                                <effect>"yard"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="9" is_finished="true">
+                <naturaldisasters>
+                    <naturaldisaster id="25" name="respond">
+                        <duration>22.36663</duration>
+                        <timeoccurred>2020-10-08T15:55:26.196519</timeoccurred>
+                        <debuff>
+                            <uuid>"dd265cbd-21e6-47f9-abc3-263f362aeee9"</uuid>
+                            <description>"Star hope million beat.\nWestern site senior gas win. Rich
+                                collection yet. Family space world offer.\nSeries long play entire
+                                whether. Home population financial free true door instead. Certain
+                                culture adult."</description>
+                            <effects>
+                                <effect>"fear"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="26" name="watch">
+                        <duration>2.7374842</duration>
+                        <timeoccurred>2020-08-19T00:12:45.686709</timeoccurred>
+                        <debuff>
+                            <uuid>"e91c8025-9b7d-4587-b675-3d673188bea3"</uuid>
+                            <description>"Travel third hotel. Director behind relationship pick.
+                                Series church government husband section.\nElection anyone account
+                                movement. Nice happen fight nation half worry. Month her society
+                                rule reduce leader. Art debate maybe strong happen."</description>
+                            <effects>
+                                <effect>"ball"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="27" name="sense">
+                        <duration>8.934063</duration>
+                        <timeoccurred>2020-01-03T17:49:38.147148</timeoccurred>
+                        <debuff>
+                            <uuid>"54dcd200-3966-49f2-901e-e34d9a7564ae"</uuid>
+                            <description>"Fear various right everybody read paper. Employee response
+                                learn ball. Argue magazine skin message fall. Couple write simple
+                                each security pull write film.\nArrive threat degree however.
+                                Serious effort worker consider may. Politics land window ok soon."</description>
+                            <effects>
+                                <effect>"its"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+        </farmingbots>
+    </player>
+    <player id="4">
+        <stats>
+            <name>Cody Osborn</name>
+            <experience>48156.477</experience>
+            <creation_date>2024-03-30T17:35:46.020463</creation_date>
+        </stats>
+        <farmingbots>
+            <farmingbot id="10" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="28" name="campaign">
+                        <duration>10.258213</duration>
+                        <timeoccurred>2022-12-28T02:57:12.768657</timeoccurred>
+                        <debuff>
+                            <uuid>"d841e939-ca25-49e8-b204-9a8526c3a618"</uuid>
+                            <description>"Month writer majority leg price. South property who
+                                type.\nFly run issue force people five. Door main couple
+                                thought.\nThree great quickly film authority many. Trial safe keep
+                                computer. Would box sing deal everyone common us table."</description>
+                            <effects>
+                                <effect>"friend"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="29" name="few">
+                        <duration>19.454813</duration>
+                        <timeoccurred>2024-04-06T23:31:07.432409</timeoccurred>
+                        <debuff>
+                            <uuid>"30a43195-5728-4595-ad87-b760ae122e6f"</uuid>
+                            <description>"Successful enjoy one factor. Image tend their
+                                various.\nPublic film health career. Effort loss increase production
+                                talk.\nIdea decide impact. Of ready politics old. Industry life I
+                                southern whatever."</description>
+                            <effects>
+                                <effect>"plan"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="30" name="team">
+                        <duration>22.98986</duration>
+                        <timeoccurred>2020-10-21T19:32:23.362897</timeoccurred>
+                        <debuff>
+                            <uuid>"dc175d10-d08a-40db-980d-cbd5f077d4a1"</uuid>
+                            <description>"Data sea option bag experience century same. Every total
+                                remember fire get.\nTalk son sister computer artist. Individual view
+                                paper able ball sometimes. Star economy computer partner small."</description>
+                            <effects>
+                                <effect>"economy"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="11" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="31" name="boy">
+                        <duration>19.916277</duration>
+                        <timeoccurred>2021-01-17T08:28:18.061324</timeoccurred>
+                        <debuff>
+                            <uuid>"e566d024-6f38-4bd6-8207-ecf81d51d2e8"</uuid>
+                            <description>"Carry every listen day consumer. Pay data drug goal
+                                nice.\nReport reduce box experience question any college.
+                                Environment treat name stuff.\nWar billion large own different
+                                really politics while. Picture raise become. Happy fund policy
+                                upon."</description>
+                            <effects>
+                                <effect>"five"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="32" name="spring">
+                        <duration>17.542044</duration>
+                        <timeoccurred>2020-10-01T02:34:33.377781</timeoccurred>
+                        <debuff>
+                            <uuid>"dd346bb3-ba51-4a48-8262-ed7554e7a074"</uuid>
+                            <description>"Know reality claim check what on. Box over take gas
+                                concern class.\nHe sound reveal catch fine dog world pretty. School
+                                keep responsibility official upon.\nRole glass wrong type. Low sell
+                                arm trade mother easy store son."</description>
+                            <effects>
+                                <effect>"major"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="33" name="four">
+                        <duration>21.680347</duration>
+                        <timeoccurred>2023-05-26T07:28:02.944127</timeoccurred>
+                        <debuff>
+                            <uuid>"577de551-c14f-43b4-95d5-2f352e2b585d"</uuid>
+                            <description>"Discussion during live enter decision which control
+                                second. Scientist watch relationship card successful. Born then
+                                new.\nTeach relate college good. Vote ever when among table receive
+                                hotel including. Interview institution enjoy."</description>
+                            <effects>
+                                <effect>"foot"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="12" is_finished="true">
+                <naturaldisasters>
+                    <naturaldisaster id="34" name="expert">
+                        <duration>18.489714</duration>
+                        <timeoccurred>2024-01-22T02:33:19.679048</timeoccurred>
+                        <debuff>
+                            <uuid>"de224124-0e9b-4b22-ba3f-4bc76c849449"</uuid>
+                            <description>"Defense group million improve type organization probably.
+                                Manage test shake our without offer health. Threat free return sure
+                                now. Western write hospital her million also send world."</description>
+                            <effects>
+                                <effect>"laugh"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="35" name="how">
+                        <duration>17.027227</duration>
+                        <timeoccurred>2021-11-06T21:29:50.797864</timeoccurred>
+                        <debuff>
+                            <uuid>"992ab739-0a8f-492e-be32-77e9bd963041"</uuid>
+                            <description>"Power game well he worker also wall. High attack home.
+                                Turn improve tree program.\nManager true decide never region
+                                without. Share song imagine ball skill across."</description>
+                            <effects>
+                                <effect>"chance"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="36" name="free">
+                        <duration>12.55921</duration>
+                        <timeoccurred>2022-08-15T03:34:54.119071</timeoccurred>
+                        <debuff>
+                            <uuid>"0758e482-20fa-4899-8378-38aa7fd445f3"</uuid>
+                            <description>"Fund happy man PM price believe. Senior save choice
+                                popular them notice.\nRisk approach institution. Create begin every
+                                thank company begin."</description>
+                            <effects>
+                                <effect>"happen"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+        </farmingbots>
+    </player>
+    <player id="5">
+        <stats>
+            <name>Heather Moore</name>
+            <experience>57329.31</experience>
+            <creation_date>2023-04-10T23:19:57.736705</creation_date>
+        </stats>
+        <farmingbots>
+            <farmingbot id="13" is_finished="true">
+                <naturaldisasters>
+                    <naturaldisaster id="37" name="school">
+                        <duration>1.7502981</duration>
+                        <timeoccurred>2022-09-03T09:13:29.249254</timeoccurred>
+                        <debuff>
+                            <uuid>"302db9d4-21a7-44ef-a299-81ffdc0c0d87"</uuid>
+                            <description>"Your six point include pretty. Answer hundred evening
+                                piece give support. Speak over option air back.\nReady difficult
+                                truth deep fear when describe. Avoid your option support four
+                                human."</description>
+                            <effects>
+                                <effect>"imagine"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="38" name="reality">
+                        <duration>19.866203</duration>
+                        <timeoccurred>2023-05-03T14:07:51.348681</timeoccurred>
+                        <debuff>
+                            <uuid>"50198493-2df9-47f6-b701-86c17d868337"</uuid>
+                            <description>"Usually trouble nation beat. Interesting fire leave in
+                                door.\nTurn rule choose money road two floor. Husband day pick
+                                support almost music loss. High paper piece off yeah
+                                garden.\nProcess piece blue it difficult parent his soldier. System
+                                life air argue."</description>
+                            <effects>
+                                <effect>"never"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="39" name="theory">
+                        <duration>13.235093</duration>
+                        <timeoccurred>2020-08-31T07:49:36.642546</timeoccurred>
+                        <debuff>
+                            <uuid>"d1191370-7cc2-4e29-9657-120af8b4bd5d"</uuid>
+                            <description>"Through pull shake why beat half head care. American three
+                                cost term dream contain drug arrive. Contain decision court.\nThough
+                                life want direction need wait. Improve wrong nation water world
+                                social agency."</description>
+                            <effects>
+                                <effect>"station"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="14" is_finished="true">
+                <naturaldisasters>
+                    <naturaldisaster id="40" name="picture">
+                        <duration>14.098654</duration>
+                        <timeoccurred>2024-02-20T12:36:57.164165</timeoccurred>
+                        <debuff>
+                            <uuid>"b014b82f-74a4-4264-a21b-3fe825afe745"</uuid>
+                            <description>"Subject name again mission recent discuss. Arrive maybe
+                                yet water. Challenge may cultural forget certainly tonight keep
+                                although.\nCompare continue require whatever compare. Career simple
+                                employee eat direction. Whom inside standard skin site theory."</description>
+                            <effects>
+                                <effect>"into"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="41" name="doctor">
+                        <duration>7.493902</duration>
+                        <timeoccurred>2021-10-22T15:57:20.96496</timeoccurred>
+                        <debuff>
+                            <uuid>"f6247443-9b08-4c6c-9b42-2a517b25316e"</uuid>
+                            <description>"Meet short rate mention. Tell push detail peace religious
+                                return.\nTest term three so. Be morning price only Mr. Color box
+                                society source ready itself course.\nRoad cause capital growth
+                                catch. Work tough security success coach."</description>
+                            <effects>
+                                <effect>"pay"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="42" name="allow">
+                        <duration>18.50012</duration>
+                        <timeoccurred>2021-05-16T12:38:15.579197</timeoccurred>
+                        <debuff>
+                            <uuid>"e654dce0-737a-4fbf-aa73-97fa11701422"</uuid>
+                            <description>"Employee trade buy picture heavy great mind detail.
+                                Country begin seven up adult. Those result model young new
+                                compare.\nTrial campaign white. Project own try ahead state."</description>
+                            <effects>
+                                <effect>"become"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="15" is_finished="true">
+                <naturaldisasters>
+                    <naturaldisaster id="43" name="seven">
+                        <duration>20.225676</duration>
+                        <timeoccurred>2022-09-08T10:50:17.063882</timeoccurred>
+                        <debuff>
+                            <uuid>"1e593a5b-0a68-4214-ae1f-8c7ebd391a15"</uuid>
+                            <description>"Story society figure house house want rock. Film manager
+                                certainly hear win including.\nLevel that this power wide entire
+                                whose. Past impact late thought soldier. Important action TV author
+                                end item stock would."</description>
+                            <effects>
+                                <effect>"thousand"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="44" name="eight">
+                        <duration>8.469334</duration>
+                        <timeoccurred>2022-04-08T02:06:30.118368</timeoccurred>
+                        <debuff>
+                            <uuid>"072e1643-d014-4b3f-b4fc-8fac78d359ea"</uuid>
+                            <description>"Professor heart yes store. Relationship work staff food
+                                firm the.\nSomething field during others score campaign
+                                professor.\nAttention reach sea trade she hit character."</description>
+                            <effects>
+                                <effect>"happy"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="45" name="tend">
+                        <duration>1.9801979</duration>
+                        <timeoccurred>2021-12-29T23:56:39.811171</timeoccurred>
+                        <debuff>
+                            <uuid>"e2a11dc4-311f-437b-8b4d-b86a6042d2a2"</uuid>
+                            <description>"Land now Congress space. He right sign husband discover
+                                news blue somebody. Security accept word order let its.\nHospital
+                                fund sure accept west ahead it leave. Six according stand.\nBusiness
+                                drop response car society tax great. Another wrong TV."</description>
+                            <effects>
+                                <effect>"human"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+        </farmingbots>
+    </player>
+    <player id="6">
+        <stats>
+            <name>Sheri Brandt</name>
+            <experience>81066.29</experience>
+            <creation_date>2022-12-23T11:02:14.21637</creation_date>
+        </stats>
+        <farmingbots>
+            <farmingbot id="16" is_finished="true">
+                <naturaldisasters>
+                    <naturaldisaster id="46" name="measure">
+                        <duration>1.5321839</duration>
+                        <timeoccurred>2023-03-28T03:00:51.513707</timeoccurred>
+                        <debuff>
+                            <uuid>"b135451e-ab40-43a9-9990-1f8f29393b68"</uuid>
+                            <description>"Movement pressure officer set with difference they. Level
+                                resource cell may. Act its find.\nSince enough clearly recently just
+                                employee write which. Development support operation product."</description>
+                            <effects>
+                                <effect>"upon"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="47" name="education">
+                        <duration>19.43472</duration>
+                        <timeoccurred>2023-04-11T23:30:55.785091</timeoccurred>
+                        <debuff>
+                            <uuid>"d7bf725d-adfd-4cd3-8f5f-d3ef3e8c9ba3"</uuid>
+                            <description>"Family dinner eight old matter individual street. Region
+                                help college away. Head court project allow top different middle
+                                Republican.\nNeed leg world heavy skill democratic teach. Field
+                                brother score business. Take whose will item tough threat letter."</description>
+                            <effects>
+                                <effect>"wish"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="48" name="listen">
+                        <duration>23.010883</duration>
+                        <timeoccurred>2022-02-22T18:15:35.395719</timeoccurred>
+                        <debuff>
+                            <uuid>"a26af3bc-6ab0-4854-ad71-9e934a339209"</uuid>
+                            <description>"High military into stage. Trade think while authority.
+                                Detail course expect parent. Gas space brother answer.\nGas past
+                                like kid smile market drive. Season lead issue even.\nHand agreement
+                                notice if professional hair. Happy kitchen woman general oil."</description>
+                            <effects>
+                                <effect>"into"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="17" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="49" name="business">
+                        <duration>20.06118</duration>
+                        <timeoccurred>2022-02-24T07:38:19.249349</timeoccurred>
+                        <debuff>
+                            <uuid>"7a6f9cb0-6e6c-4c06-b66b-e73f5f2b3dfd"</uuid>
+                            <description>"Drop garden share happen. People could indeed thought bill
+                                everybody. Beautiful mouth have hotel practice affect role animal."</description>
+                            <effects>
+                                <effect>"according"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="50" name="force">
+                        <duration>12.817596</duration>
+                        <timeoccurred>2024-01-18T00:37:46.792711</timeoccurred>
+                        <debuff>
+                            <uuid>"13a32fd5-1b7f-402a-ae85-57802bdc570c"</uuid>
+                            <description>"To case shake per knowledge care clear under. Common
+                                concern eat billion.\nLife turn help pay word keep.\nNight school
+                                teach who picture take."</description>
+                            <effects>
+                                <effect>"notice"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="51" name="customer">
+                        <duration>15.773282</duration>
+                        <timeoccurred>2023-02-26T11:49:46.292763</timeoccurred>
+                        <debuff>
+                            <uuid>"b8090d16-79a8-4b31-b2b4-96e57ac67393"</uuid>
+                            <description>"Scene generation money attention. Recently face simple
+                                throw. Site hold well color on smile.\nThreat commercial her watch
+                                indicate. Attorney agency keep performance guy read decide.
+                                Commercial agency toward husband score.\nSeason expect wall ten."</description>
+                            <effects>
+                                <effect>"after"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="18" is_finished="true">
+                <naturaldisasters>
+                    <naturaldisaster id="52" name="official">
+                        <duration>11.803232</duration>
+                        <timeoccurred>2020-02-28T03:24:54.583807</timeoccurred>
+                        <debuff>
+                            <uuid>"7742e2a0-f63e-4e12-b6c7-bb4880254c77"</uuid>
+                            <description>"Fill stage marriage movie drug company of. Truth dark
+                                describe. Sing dream anything song sing.\nEnter claim reflect strong
+                                century leg. Herself perhaps husband let box wrong. Myself huge make
+                                see medical late bar."</description>
+                            <effects>
+                                <effect>"bit"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="53" name="why">
+                        <duration>12.9888735</duration>
+                        <timeoccurred>2024-04-10T13:59:15.263912</timeoccurred>
+                        <debuff>
+                            <uuid>"0075395d-5ad8-4a84-af31-6285c5c68563"</uuid>
+                            <description>"Tonight want benefit TV with possible spring health. Easy
+                                whom cost pressure which. Avoid thought easy seat view thank
+                                financial.\nNow feel level team them human page. Evidence nothing
+                                more hospital entire."</description>
+                            <effects>
+                                <effect>"follow"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="54" name="hour">
+                        <duration>18.072872</duration>
+                        <timeoccurred>2020-04-09T16:53:15.374868</timeoccurred>
+                        <debuff>
+                            <uuid>"e26e7db4-dac4-4c55-ad71-ed91aaed7cc3"</uuid>
+                            <description>"Light senior bag despite thought data. Fine guy election
+                                since feeling.\nBeyond seat begin capital. Truth dog center
+                                situation base remember sing.\nResearch stop foreign bed economy
+                                before some. Particular action various property rise market one."</description>
+                            <effects>
+                                <effect>"plan"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+        </farmingbots>
+    </player>
+    <player id="7">
+        <stats>
+            <name>Tonya Liu</name>
+            <experience>2854.8716</experience>
+            <creation_date>2024-01-19T02:15:18.500286</creation_date>
+        </stats>
+        <farmingbots>
+            <farmingbot id="19" is_finished="true">
+                <naturaldisasters>
+                    <naturaldisaster id="55" name="campaign">
+                        <duration>13.997257</duration>
+                        <timeoccurred>2020-02-22T04:58:27.292876</timeoccurred>
+                        <debuff>
+                            <uuid>"75f502b9-b515-482c-b6ca-125c7a96325c"</uuid>
+                            <description>"Between beat rather history first war become. Discuss be
+                                year return today. Always body or develop above mind.\nTest partner
+                                show eight. Them business art physical way democratic. Theory
+                                respond need effect value force add."</description>
+                            <effects>
+                                <effect>"serve"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="56" name="economic">
+                        <duration>9.865633</duration>
+                        <timeoccurred>2022-12-09T09:39:41.800481</timeoccurred>
+                        <debuff>
+                            <uuid>"de24bc35-f994-4c21-8277-f5740ed065bf"</uuid>
+                            <description>"Green better team.\nSize those many result power film.
+                                Since reason rule tend state guy. Type tree school century. Street
+                                green company few trade four already.\nNothing note cover. Why
+                                report government a food recently some different."</description>
+                            <effects>
+                                <effect>"animal"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="57" name="admit">
+                        <duration>9.697023</duration>
+                        <timeoccurred>2021-01-03T07:15:54.828313</timeoccurred>
+                        <debuff>
+                            <uuid>"56933a27-fc7d-45b9-8bc8-64e29a736cba"</uuid>
+                            <description>"Travel cause blood race defense. Arrive daughter bed cost
+                                rest drive figure painting.\nPresent another population analysis
+                                thing military cover. Seat everyone risk can no guy conference.\nHe
+                                quality suggest clearly region. Everything to none political few."</description>
+                            <effects>
+                                <effect>"think"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="20" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="58" name="attack">
+                        <duration>16.03284</duration>
+                        <timeoccurred>2020-11-11T02:15:34.547458</timeoccurred>
+                        <debuff>
+                            <uuid>"4680d7b9-e3f4-44e7-aae6-e5430adbc0cd"</uuid>
+                            <description>"Thus leg fine whole ball culture school.\nPlayer for
+                                affect drive protect record near glass. Join staff free
+                                television.\nOperation young avoid tax. Involve around create design
+                                team. Degree maybe forward campaign of kind."</description>
+                            <effects>
+                                <effect>"remember"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="59" name="mention">
+                        <duration>16.640034</duration>
+                        <timeoccurred>2020-08-26T04:24:26.980205</timeoccurred>
+                        <debuff>
+                            <uuid>"42573b73-1e9a-4c60-8371-372bcccc0dfa"</uuid>
+                            <description>"Respond whole arrive various rock any air. Carry physical
+                                treatment air argue particular. Political wait high leave measure
+                                occur.\nWhatever young wall talk board bar. Stuff ground natural
+                                minute her. Human evening rich man write listen."</description>
+                            <effects>
+                                <effect>"executive"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="60" name="alone">
+                        <duration>4.9017577</duration>
+                        <timeoccurred>2022-10-24T22:27:35.847116</timeoccurred>
+                        <debuff>
+                            <uuid>"2f59ebce-47ee-491b-9c7f-d83f118cacd6"</uuid>
+                            <description>"Memory commercial beat from instead type name. Feeling
+                                difficult some.\nAccording message on season name suddenly
+                                public.\nGirl safe specific management cut. Deep man treat important
+                                ago order."</description>
+                            <effects>
+                                <effect>"computer"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="21" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="61" name="worker">
+                        <duration>18.636843</duration>
+                        <timeoccurred>2024-02-27T13:21:48.603087</timeoccurred>
+                        <debuff>
+                            <uuid>"d28de650-c23e-4fab-80bc-7ed655cf3ef7"</uuid>
+                            <description>"Too kitchen network your mean somebody doctor. Local black
+                                moment most task.\nOnly international often almost necessary. East
+                                can up.\nOr draw go great dream section. Hope talk all."</description>
+                            <effects>
+                                <effect>"want"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="62" name="president">
+                        <duration>2.6755357</duration>
+                        <timeoccurred>2023-04-17T03:38:59.912851</timeoccurred>
+                        <debuff>
+                            <uuid>"bd7eca52-1ff6-4e2b-a9e5-419382b4e61d"</uuid>
+                            <description>"Within shake race third glass market. Half clear past
+                                develop audience significant. Air entire set industry
+                                later.\nEconomy attorney hospital environment candidate. Newspaper
+                                prove deal movement color break risk."</description>
+                            <effects>
+                                <effect>"interview"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="63" name="several">
+                        <duration>16.650093</duration>
+                        <timeoccurred>2021-11-23T02:33:55.412689</timeoccurred>
+                        <debuff>
+                            <uuid>"54621789-4525-4cf2-b7e7-b0565d08c9db"</uuid>
+                            <description>"Play process ground short notice society responsibility
+                                also. Social entire sound present loss. Well truth develop agent
+                                hit."</description>
+                            <effects>
+                                <effect>"same"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+        </farmingbots>
+    </player>
+    <player id="8">
+        <stats>
+            <name>Daniel Campbell</name>
+            <experience>54797.32</experience>
+            <creation_date>2022-05-19T05:15:09.66502</creation_date>
+        </stats>
+        <farmingbots>
+            <farmingbot id="22" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="64" name="same">
+                        <duration>13.526561</duration>
+                        <timeoccurred>2021-09-27T13:01:59.850257</timeoccurred>
+                        <debuff>
+                            <uuid>"120f34e3-7479-4a8c-9b81-3595d44ce430"</uuid>
+                            <description>"Base Congress defense here within lose.\nDoctor their
+                                campaign feel improve describe tonight. Phone scene dinner couple
+                                interesting growth series."</description>
+                            <effects>
+                                <effect>"no"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="65" name="join">
+                        <duration>16.565851</duration>
+                        <timeoccurred>2023-08-10T20:46:58.276427</timeoccurred>
+                        <debuff>
+                            <uuid>"7d82fa52-3e55-49c1-ac37-c9b85511db59"</uuid>
+                            <description>"Phone star end wall you.\nWonder top travel thousand
+                                minute economic. Believe fish race education admit loss. Energy
+                                minute wait language pull clear."</description>
+                            <effects>
+                                <effect>"race"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="66" name="medical">
+                        <duration>3.2364528</duration>
+                        <timeoccurred>2021-12-16T05:49:29.646744</timeoccurred>
+                        <debuff>
+                            <uuid>"cd5bec31-9c22-42ff-b7b7-f8354b966eed"</uuid>
+                            <description>"Game they lead tonight although. Pattern blood develop
+                                share prove apply course.\nExecutive catch prepare around however
+                                several alone group. Lawyer other one north. Fast star information
+                                sit fish where."</description>
+                            <effects>
+                                <effect>"hair"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="23" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="67" name="throw">
+                        <duration>10.993795</duration>
+                        <timeoccurred>2020-08-05T07:09:15.418742</timeoccurred>
+                        <debuff>
+                            <uuid>"0968b9e7-8314-45c8-820b-174e365d0c57"</uuid>
+                            <description>"Rather piece moment successful. Total book role despite
+                                reach.\nThat nothing base energy ball present. Reflect bed stop
+                                remember baby other black. Example test create item. Entire dinner
+                                during speak model myself."</description>
+                            <effects>
+                                <effect>"race"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="68" name="age">
+                        <duration>11.048151</duration>
+                        <timeoccurred>2023-03-05T21:45:18.597893</timeoccurred>
+                        <debuff>
+                            <uuid>"0d9e7019-2383-4c46-932b-115afe8b3938"</uuid>
+                            <description>"Foreign could tell he activity affect. Result station
+                                right break policy TV down.\nTax space oil his. Available throw base
+                                itself.\nJust why tough look. Visit cut now hand drive. Information
+                                you soon various guy."</description>
+                            <effects>
+                                <effect>"instead"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="69" name="wish">
+                        <duration>19.580156</duration>
+                        <timeoccurred>2020-03-16T06:55:35.745592</timeoccurred>
+                        <debuff>
+                            <uuid>"04687831-1ee4-4776-a831-0765312c7564"</uuid>
+                            <description>"Marriage gun majority team significant best miss. Reveal
+                                later local. Mouth talk walk firm production produce.\nSkill risk
+                                strategy. Study write decision able foreign."</description>
+                            <effects>
+                                <effect>"specific"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="24" is_finished="true">
+                <naturaldisasters>
+                    <naturaldisaster id="70" name="since">
+                        <duration>9.767918</duration>
+                        <timeoccurred>2022-02-13T08:19:10.852391</timeoccurred>
+                        <debuff>
+                            <uuid>"0836cc04-4c45-41b6-80bd-c666324b1b95"</uuid>
+                            <description>"Fast during lot task. Myself her view least.\nFriend least
+                                yeah draw decision most chance. Try rock father. Cold exist painting
+                                behavior.\nCareer late product just mother ready ground class. Admit
+                                film late practice. Particular deep together attention."</description>
+                            <effects>
+                                <effect>"work"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="71" name="message">
+                        <duration>7.3256273</duration>
+                        <timeoccurred>2023-11-27T23:46:42.244207</timeoccurred>
+                        <debuff>
+                            <uuid>"6b2ba1f9-598d-4fc4-a78f-618a99c0c427"</uuid>
+                            <description>"Past short mission similar. Body husband point style hot
+                                yeah food film.\nDifferent several move season decade person
+                                understand anyone. Thus certainly across nothing wear bank science.
+                                Such affect effort walk concern test financial."</description>
+                            <effects>
+                                <effect>"lawyer"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="72" name="stock">
+                        <duration>15.071178</duration>
+                        <timeoccurred>2021-01-17T14:49:49.83426</timeoccurred>
+                        <debuff>
+                            <uuid>"0dde40db-be25-4c55-a75c-f325ff08a6f9"</uuid>
+                            <description>"Movement control agreement. Election already increase. To
+                                break expect soldier. Morning within social government prove.\nData
+                                allow safe sure someone door close the. Interview success ten open
+                                mouth blue. State another voice."</description>
+                            <effects>
+                                <effect>"fire"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+        </farmingbots>
+    </player>
+    <player id="9">
+        <stats>
+            <name>Ryan Hamilton</name>
+            <experience>65992.445</experience>
+            <creation_date>2023-04-19T22:59:34.978056</creation_date>
+        </stats>
+        <farmingbots>
+            <farmingbot id="25" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="74" name="something">
+                        <duration>22.695024</duration>
+                        <timeoccurred>2022-07-16T11:31:15.932487</timeoccurred>
+                        <debuff>
+                            <uuid>"3ab235d1-068e-41e1-a2cd-8225502ae18c"</uuid>
+                            <description>"Skill wall leave what course discuss our many. Send his
+                                herself sense rest respond start. Myself allow much school account."</description>
+                            <effects>
+                                <effect>"still"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="75" name="hear">
+                        <duration>11.508109</duration>
+                        <timeoccurred>2024-01-10T22:55:11.2422</timeoccurred>
+                        <debuff>
+                            <uuid>"5484454a-ab23-45b9-af74-3dccd8e5f41a"</uuid>
+                            <description>"Number quality respond middle drive identify. Cost air
+                                friend door gun line. Agree beautiful nice actually. Voice with home
+                                shake short commercial.\nFront unit something. Someone affect weight
+                                the nice need take."</description>
+                            <effects>
+                                <effect>"remain"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="73" name="option">
+                        <duration>22.81715</duration>
+                        <timeoccurred>2023-10-05T10:56:23.784627</timeoccurred>
+                        <debuff>
+                            <uuid>"f05962ea-1450-4c1e-9fae-0dd2f9984ff2"</uuid>
+                            <description>"Charge same up human. Pay big pattern south. Early nearly
+                                case interview outside blue stuff stand. Total hope everything one
+                                never society few.\nItem south security summer whatever until factor
+                                weight. Table military kitchen different difference mouth."</description>
+                            <effects>
+                                <effect>"time"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="26" is_finished="true">
+                <naturaldisasters>
+                    <naturaldisaster id="76" name="loss">
+                        <duration>21.725248</duration>
+                        <timeoccurred>2021-06-07T11:18:46.409698</timeoccurred>
+                        <debuff>
+                            <uuid>"671c76b3-7d16-4cb0-8de6-e52dcba97923"</uuid>
+                            <description>"Because law politics. Free only whatever lot your
+                                including officer. Main leg nation. Town few low impact although
+                                but.\nDrug sound brother hospital main charge challenge. Test huge
+                                talk way. Commercial information give throw left this."</description>
+                            <effects>
+                                <effect>"offer"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="77" name="bag">
+                        <duration>20.270807</duration>
+                        <timeoccurred>2023-09-03T08:06:25.063568</timeoccurred>
+                        <debuff>
+                            <uuid>"5dcbb32f-98d4-4f29-8d53-9db76268c5ba"</uuid>
+                            <description>"Manager yes draw remain culture officer. Firm face name
+                                catch buy behind enter.\nFinal owner sell pick because. Amount help
+                                tend manage seek. Region image agreement station.\nMan listen car
+                                song. Compare one myself third. End pretty role million news."</description>
+                            <effects>
+                                <effect>"suffer"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="78" name="what">
+                        <duration>18.837868</duration>
+                        <timeoccurred>2020-10-01T00:11:28.988516</timeoccurred>
+                        <debuff>
+                            <uuid>"24c6ecb5-3782-41ea-bc80-a651b464233e"</uuid>
+                            <description>"She pull or. General not production authority across four
+                                card represent.\nRelationship feeling during use new. Something seat
+                                my dark commercial picture people."</description>
+                            <effects>
+                                <effect>"up"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="27" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="79" name="structure">
+                        <duration>11.655925</duration>
+                        <timeoccurred>2023-05-30T23:19:13.812227</timeoccurred>
+                        <debuff>
+                            <uuid>"a8fec92e-90a4-4160-a3ce-f6e3a94c4edf"</uuid>
+                            <description>"Tell interview all fire mouth line customer. Tree ready
+                                call.\nAnything second growth find these. Walk Mr town rate. Change
+                                walk before kitchen.\nGreen bag protect."</description>
+                            <effects>
+                                <effect>"suffer"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="80" name="physical">
+                        <duration>21.151905</duration>
+                        <timeoccurred>2023-04-01T11:07:08.331235</timeoccurred>
+                        <debuff>
+                            <uuid>"a20f5153-4b74-4a92-b507-249aa842a655"</uuid>
+                            <description>"Choose owner argue. Become sort pass land.\nBest service
+                                upon cell. Clear run five former task.\nMore guess whatever seat
+                                over. Lot stage skill fine.\nEffect up source open order practice.
+                                Community political close large. Room mean little identify pretty."</description>
+                            <effects>
+                                <effect>"social"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="81" name="kind">
+                        <duration>12.816547</duration>
+                        <timeoccurred>2021-04-13T20:55:00.836059</timeoccurred>
+                        <debuff>
+                            <uuid>"97639249-cfc7-4013-a10c-04e22b230720"</uuid>
+                            <description>"Place policy federal power any own board. Outside enter
+                                tax certainly including red behind.\nGo sea each so. Fish total
+                                break bar grow different.\nFull popular attack ready. Or decide
+                                where already clearly respond work."</description>
+                            <effects>
+                                <effect>"role"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+        </farmingbots>
+    </player>
+    <player id="10">
+        <stats>
+            <name>Matthew Wolfe</name>
+            <experience>71013.04</experience>
+            <creation_date>2021-03-27T02:16:07.707647</creation_date>
+        </stats>
+        <farmingbots>
+            <farmingbot id="28" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="82" name="think">
+                        <duration>8.184587</duration>
+                        <timeoccurred>2023-01-20T13:44:13.950618</timeoccurred>
+                        <debuff>
+                            <uuid>"8a08c5b7-c6e2-42d9-8a36-902e911e092d"</uuid>
+                            <description>"Quality pick cold wish billion accept. Low sit late follow
+                                respond yard happen. View prevent call firm scientist
+                                skin.\nCustomer general plan indicate senior. Along project few
+                                soon."</description>
+                            <effects>
+                                <effect>"agent"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="83" name="as">
+                        <duration>12.490951</duration>
+                        <timeoccurred>2024-01-11T15:01:46.74173</timeoccurred>
+                        <debuff>
+                            <uuid>"984725b4-7de3-40a2-96f5-3fe32a979e99"</uuid>
+                            <description>"Around another window if. Region military identify theory
+                                effect subject environment. Human former memory design believe
+                                actually. Newspaper face read lawyer still easy officer."</description>
+                            <effects>
+                                <effect>"require"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="84" name="hospital">
+                        <duration>21.866545</duration>
+                        <timeoccurred>2021-06-13T17:33:59.814484</timeoccurred>
+                        <debuff>
+                            <uuid>"be3f2088-8562-4dd1-a04d-b67b7256c013"</uuid>
+                            <description>"Leave class form wife language thus commercial. Center who
+                                challenge degree official employee single. Two machine people know
+                                assume include interview. General common short audience."</description>
+                            <effects>
+                                <effect>"husband"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="29" is_finished="false">
+                <naturaldisasters>
+                    <naturaldisaster id="87" name="national">
+                        <duration>17.987997</duration>
+                        <timeoccurred>2022-08-17T07:25:04.575001</timeoccurred>
+                        <debuff>
+                            <uuid>"46e37811-f07a-49a5-96cc-1505ad49bd09"</uuid>
+                            <description>"Particular left experience ball PM spend ok. Line nearly
+                                yard music her or your skill.\nFact Republican yeah eight somebody
+                                drive maybe. Project cost staff amount pass buy. Give tree next face
+                                end. Kid rock moment staff."</description>
+                            <effects>
+                                <effect>"relate"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="85" name="foot">
+                        <duration>3.5159478</duration>
+                        <timeoccurred>2021-12-14T08:02:02.568973</timeoccurred>
+                        <debuff>
+                            <uuid>"34daf66e-80c1-4f8f-948b-382e85f43cc0"</uuid>
+                            <description>"Positive country history eight two garden seem town. Few
+                                analysis establish.\nPersonal town improve. Long team consider.
+                                Ability catch situation.\nSpend weight threat concern report. Store
+                                catch worker manage store."</description>
+                            <effects>
+                                <effect>"test"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="86" name="see">
+                        <duration>6.3290243</duration>
+                        <timeoccurred>2023-08-20T14:04:56.265779</timeoccurred>
+                        <debuff>
+                            <uuid>"6221c115-2eca-4507-8fec-2edfaa9a581a"</uuid>
+                            <description>"Visit these report sense into. Scene growth game weight
+                                author.\nLet fight source special. Fire serve I.\nAgreement movie
+                                now. I forward machine nice range executive. Open choice knowledge
+                                style usually civil value."</description>
+                            <effects>
+                                <effect>"possible"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+            <farmingbot id="30" is_finished="true">
+                <naturaldisasters>
+                    <naturaldisaster id="88" name="situation">
+                        <duration>3.86767</duration>
+                        <timeoccurred>2020-04-17T16:53:12.261343</timeoccurred>
+                        <debuff>
+                            <uuid>"4e98018a-8621-49b7-9d9c-86c7512f6620"</uuid>
+                            <description>"Sit put involve performance say environment.\nSignificant
+                                likely knowledge house lose sense. Gas firm end current billion
+                                notice happen condition. Administration month stay yard less near
+                                very design. Bit still family around community apply."</description>
+                            <effects>
+                                <effect>"election"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="89" name="concern">
+                        <duration>6.175383</duration>
+                        <timeoccurred>2023-10-29T18:45:47.264031</timeoccurred>
+                        <debuff>
+                            <uuid>"a0020325-4817-4b23-9b4e-3557d145212b"</uuid>
+                            <description>"Fast blue arrive rock. Themselves admit program heart
+                                provide answer.\nReach control speech international himself.
+                                Discussion bill local war use involve discussion. Space enjoy age
+                                area less.\nPut both may recent big edge."</description>
+                            <effects>
+                                <effect>"else"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                    <naturaldisaster id="90" name="recently">
+                        <duration>14.004476</duration>
+                        <timeoccurred>2022-06-27T13:34:58.075815</timeoccurred>
+                        <debuff>
+                            <uuid>"ab6a6fe6-2666-4a84-b48b-437d90f26e48"</uuid>
+                            <description>"Get whom understand by price thus. Prove term cut its
+                                table attention dark. Issue third history cell ago sign
+                                player.\nCreate consumer where purpose. View pretty kind tree."</description>
+                            <effects>
+                                <effect>"though"</effect>
+                            </effects>
+                        </debuff>
+                    </naturaldisaster>
+                </naturaldisasters>
+            </farmingbot>
+        </farmingbots>
+    </player>
+</players>
