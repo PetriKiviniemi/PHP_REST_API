@@ -37,6 +37,43 @@ class NaturalDisasterData {
     }
 }
 
+function GET_OPERATION()
+{
+    global $rest_api_url;
+
+    try
+    {
+
+        $playerName = urlencode("Charles Lee");
+        $player_stats_url = rtrim($rest_api_url, '/') . "/players/{$playerName}/stats";
+
+        $curl = curl_init();
+
+        curl_setopt($curl, CURLOPT_URL, $player_stats_url);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl, CURLOPT_HTTPGET, true);
+        curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: text/plain'));
+
+        $response = curl_exec($curl);
+
+        if(curl_errno($curl)) 
+        {
+            print_r('Curl error: ' . curl_error($curl));
+        }
+        else
+        {
+            echo '<pre>';
+            echo htmlentities($response);
+            echo '</pre>';
+        }
+
+        curl_close($curl);
+    } 
+    catch (Exception $e) {
+        print_r('Error: ' . $e->getMessage());
+    }
+}
+
 function POST_OPERATION()
 {
     global $rest_api_url;
@@ -83,46 +120,13 @@ function POST_OPERATION()
         }
         else
         {
-            print_r($response);
+            echo '<pre>';
+            echo htmlspecialchars($response);
+            echo '</pre>';
         }
 
         curl_close($curl);
     }
-    catch (Exception $e) {
-        print_r('Error: ' . $e->getMessage());
-    }
-}
-
-function GET_OPERATION()
-{
-    global $rest_api_url;
-
-    try
-    {
-
-        $playerName = urlencode("Charles Lee");
-        $player_stats_url = rtrim($rest_api_url, '/') . "/players/{$playerName}/stats";
-
-        $curl = curl_init();
-
-        curl_setopt($curl, CURLOPT_URL, $player_stats_url);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($curl, CURLOPT_HTTPGET, true);
-        curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: text/plain'));
-
-        $response = curl_exec($curl);
-
-        if(curl_errno($curl)) 
-        {
-            print_r('Curl error: ' . curl_error($curl));
-        }
-        else
-        {
-            print_r($response);
-        }
-
-        curl_close($curl);
-    } 
     catch (Exception $e) {
         print_r('Error: ' . $e->getMessage());
     }
@@ -152,7 +156,7 @@ function PUT_OPERATION()
 
         $naturalDisasterData = new NaturalDisasterData(
             $naturalDisasterId, "Latest Earthquake", 20.123,
-            "1717429017", $debuffs
+            1717429017, $debuffs
         );
 
         $put_data = json_encode($naturalDisasterData);
@@ -178,7 +182,9 @@ function PUT_OPERATION()
         }
         else
         {
-            print_r($response);
+            echo '<pre>';
+            echo htmlspecialchars($response);
+            echo '</pre>';
         }
 
         curl_close($curl);
@@ -215,7 +221,9 @@ function DELETE_OPERATION()
         }
         else
         {
-            print_r($response);
+            echo '<pre>';
+            echo htmlspecialchars($response);
+            echo '</pre>';
         }
 
         curl_close($curl);
@@ -223,6 +231,11 @@ function DELETE_OPERATION()
     catch (Exception $e) {
         print_r('Error: ' . $e->getMessage());
     }
+}
+
+function PATCH_OPERATION()
+{
+
 }
 
 if (isset($_POST['action'])) {
@@ -239,6 +252,9 @@ if (isset($_POST['action'])) {
       break;
     case 'PUT':
       PUT_OPERATION();
+      break;
+    case 'PATCH':
+      PATCH_OPERATION();
       break;
     case 'DELETE':
       DELETE_OPERATION();
