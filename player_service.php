@@ -460,7 +460,7 @@ function handleRequests($segments, $request_type, $data = null)
                     "created_natural_disaster_id" => $created_natural_disaster_id,
                     "links" => [
                         [ "rel" => "self", "href" => "${base_path}/players/{$playerId}/farmingbots/{$farmingBotId}/naturaldisasters", "method" => "POST" ],
-                        [ "rel" => "edit", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/{$created_natural_disaster_id}", "method" => ["PUT", "GET"] ],
+                        [ "rel" => "edit", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/{$created_natural_disaster_id}", "method" => ["PUT", "GET", "PATCH"] ],
                         [ "rel" => "delete", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/deletefrom/{your_timestamp}", "method" => "DELETE"],
                         [ "rel" => "get_connected_player_stats", "href" => "${base_path}/players/${playerId}/stats", "method" => "GET"],
                     ],
@@ -501,7 +501,7 @@ function handleRequests($segments, $request_type, $data = null)
                 $hateoas_data = [
                     "updated_natural_disaster" => $updated_natural_disaster_stdclass,
                     "links" => [
-                        [ "rel" => "self", "href" => "${base_path}/players/{$playerId}/farmingbots/{$farmingBotId}/naturaldisasters/${naturalDisasterId}", "method" => ["PUT", "GET"]],
+                        [ "rel" => "self", "href" => "${base_path}/players/{$playerId}/farmingbots/{$farmingBotId}/naturaldisasters/${naturalDisasterId}", "method" => ["PUT", "GET", "PATCH"]],
                         [ "rel" => "add", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters", "method" => "POST"],
                         [ "rel" => "delete", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/deletefrom/{your_timestamp}", "method" => "DELETE"],
                     ],
@@ -522,7 +522,7 @@ function handleRequests($segments, $request_type, $data = null)
                 $hateoas_data = [
                     "naturalDisaster" => $naturalDisaster,
                     "links" => [
-                        [ "rel" => "self", "href" => "${base_path}/players/{$playerId}/farmingbots/{$farmingBotId}/naturaldisasters/${naturalDisasterId}", "method" => ["GET", "PUT"]],
+                        [ "rel" => "self", "href" => "${base_path}/players/{$playerId}/farmingbots/{$farmingBotId}/naturaldisasters/${naturalDisasterId}", "method" => ["GET", "PUT", "PATCH"]],
                         [ "rel" => "add", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters", "method" => "POST"],
                         [ "rel" => "delete", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/deletefrom/{your_timestamp}", "method" => "DELETE"],
                     ],
