@@ -18,6 +18,11 @@ function sendError($code, $message = "") {
     echo json_encode(['error' => 'Invalid request: ' . $message]);
 }
 
+function isValidUUID($uuid) {
+    $regex = '/^[0-9a-f]{8}-[0-9a-f]{4}-[4][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i';
+    return preg_match($regex, $uuid) === 1;
+}
+
 function validate_jsonschema($json_input, $jsonschema_filepath)
 {
 
@@ -413,6 +418,22 @@ class PlayerService {
         }
         return -1;
     }
+
+    public function GetDebuffByUUID($playerId, $farmingBotId, $naturalDisasterId, $uuid)
+    {
+        $naturalDisaster = $this->GetNaturalDisaster($playerId, $farmingBotId, $naturalDisasterId);
+        if($naturalDisaster)
+        {
+            foreach($naturalDisaster->disasterDebuffs as $debuff)
+            {
+                if($debuff->uuid == $uuid)
+                {
+                    return $debuff;
+                }
+            }
+        }
+        return -1;
+    }
 }
 
 function handleRequests($segments, $request_type, $data = null)
@@ -494,9 +515,9 @@ function handleRequests($segments, $request_type, $data = null)
                     "created_natural_disaster_id" => $created_natural_disaster_id,
                     "links" => [
                         [ "rel" => "self", "href" => "${base_path}/players/{$playerId}/farmingbots/{$farmingBotId}/naturaldisasters", "method" => "POST" ],
-                        [ "rel" => "edit", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/{$created_natural_disaster_id}", "method" => ["PUT", "GET", "PATCH"] ],
-                        [ "rel" => "delete", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/deletefrom/{your_timestamp}", "method" => "DELETE"],
-                        [ "rel" => "get_connected_player_stats", "href" => "${base_path}/players/${playerId}/stats", "method" => "GET"],
+                        [ "rel" => "edit_ND", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/{$created_natural_disaster_id}", "method" => ["PUT", "GET", "PATCH"] ],
+                        [ "rel" => "delete_ND", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/deletefrom/{your_timestamp}", "method" => "DELETE"],
+                        [ "rel" => "get_player_stats", "href" => "${base_path}/players/${playerId}/stats", "method" => "GET"],
                     ],
                 ];
 
@@ -545,8 +566,8 @@ function handleRequests($segments, $request_type, $data = null)
                     "updated_natural_disaster" => $updated_natural_disaster_stdclass,
                     "links" => [
                         [ "rel" => "self", "href" => "${base_path}/players/{$playerId}/farmingbots/{$farmingBotId}/naturaldisasters/${naturalDisasterId}", "method" => ["PUT", "GET", "PATCH"]],
-                        [ "rel" => "add", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters", "method" => "POST"],
-                        [ "rel" => "delete", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/deletefrom/{your_timestamp}", "method" => "DELETE"],
+                        [ "rel" => "add_ND", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters", "method" => "POST"],
+                        [ "rel" => "delete_ND", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/deletefrom/{your_timestamp}", "method" => "DELETE"],
                     ],
                 ];
 
@@ -566,8 +587,8 @@ function handleRequests($segments, $request_type, $data = null)
                     "naturalDisaster" => $naturalDisaster,
                     "links" => [
                         [ "rel" => "self", "href" => "${base_path}/players/{$playerId}/farmingbots/{$farmingBotId}/naturaldisasters/${naturalDisasterId}", "method" => ["GET", "PUT", "PATCH"]],
-                        [ "rel" => "add", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters", "method" => "POST"],
-                        [ "rel" => "delete", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/deletefrom/{your_timestamp}", "method" => "DELETE"],
+                        [ "rel" => "add_ND", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters", "method" => "POST"],
+                        [ "rel" => "delete_ND", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/deletefrom/{your_timestamp}", "method" => "DELETE"],
                     ],
                 ];
 
@@ -594,8 +615,8 @@ function handleRequests($segments, $request_type, $data = null)
                     "patched_natural_disaster" => $patched_natural_disaster,
                     "links" => [
                         [ "rel" => "self", "href" => "${base_path}/players/{$playerId}/farmingbots/{$farmingBotId}/naturaldisasters/${naturalDisasterId}", "method" => ["PATCH", "GET", "PUT"]],
-                        [ "rel" => "add", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters", "method" => "POST"],
-                        [ "rel" => "delete", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/deletefrom/{your_timestamp}", "method" => "DELETE"],
+                        [ "rel" => "add_ND", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters", "method" => "POST"],
+                        [ "rel" => "delete_ND", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/deletefrom/{your_timestamp}", "method" => "DELETE"],
                     ],
                 ];
 
@@ -633,8 +654,8 @@ function handleRequests($segments, $request_type, $data = null)
                     "deleted_natural_disaster_ids" => $deletedNaturalDisasterIds,
                     "links" => [
                         [ "rel" => "self", "href" => "${base_path}/players/{$playerId}/farmingbots/{$farmingBotId}/naturaldisasters/deletefrom/${timestamp}", "method" => "DELETE"],
-                        [ "rel" => "add", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters", "method" => "POST"],
-                        [ "rel" => "edit", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/{your_natural_disaster_id}", "method" => ["PUT", "GET"]],
+                        [ "rel" => "add_ND", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters", "method" => "POST"],
+                        [ "rel" => "edit_ND", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/{your_natural_disaster_id}", "method" => ["PUT", "GET", "PATCH"]],
                     ],
                 ];
 
@@ -646,6 +667,47 @@ function handleRequests($segments, $request_type, $data = null)
             }
             sendError(405, "Invalid PARAMS or HTTP Request Type not supported for /players/{playerId}/farmingbots/{farmingBotId}\
             naturaldisasters/deletefrom/{timestamp}");
+            return;
+        }
+    }
+    else if(count($segments) === 8)
+    {
+        // Handle /players/{playerId}/farmingbots/{farmingBotId}/
+        // naturaldisasters/{naturalDisasterId}/debuffs/{uuid}
+        if($segments[0] === 'players' && is_numeric($segments[1]) &&
+        $segments[2] === 'farmingbots' && is_numeric($segments[3]) &&
+        $segments[4] === 'naturaldisasters' && is_numeric($segments[5]) &&
+        $segments[6] === 'debuffs' && isValidUUID($segments[7]))
+        {
+            $playerId = $segments[1];
+            $farmingBotId = $segments[3];
+            $naturalDisasterId = $segments[5];
+            $debuffUUID = $segments[7];
+
+            if($request_type === "GET")
+            {
+                $service = new PlayerService();
+                $debuff = $service->GetDebuffByUUID($playerId, $farmingBotId, $naturalDisasterId, $debuffUUID);
+
+                $hateoas_data = [
+                    "debuff" => $debuff,
+                    "links" => [
+                        [ "rel" => "self", "href" => "${base_path}/players/{$playerId}/farmingbots/{$farmingBotId}/naturaldisasters/debuffs/${debuffUUID}", "method" => "GET"],
+                        [ "rel" => "delete_ND", "href" => "${base_path}/players/{$playerId}/farmingbots/{$farmingBotId}/naturaldisasters/deletefrom/{timestamp}", "method" => "DELETE"],
+                        [ "rel" => "add_ND", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters", "method" => "POST"],
+                        [ "rel" => "edit_ND", "href" => "${base_path}/players/${playerId}/farmingbots/{$farmingBotId}/naturaldisasters/${naturalDisasterId}", "method" => ["PUT", "GET", "PATCH"]],
+                    ],
+                ];
+
+                header('Content-Type: application/json');
+                print_r(json_encode($hateoas_data, JSON_PRETTY_PRINT));
+                print_r("\n");
+                http_response_code(200);
+                return;
+            }
+
+            sendError(405, "Invalid PARAMS or HTTP Request Type not supported for /players/{playerId}/farmingbots/{farmingBotId}\
+            naturaldisasters/debuffs/{uuid}");
             return;
         }
     }
