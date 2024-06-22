@@ -228,6 +228,21 @@ class PlayerService {
         return $xml;
     }
 
+    /*
+    GetPlayerStats(name: string)
+    URI: https://wwwlab.cs.univie.ac.at/~kiviniemip35/player_service.php/players/{playerId}/stats
+    HTTP-Method: GET 
+    Request-Body: Null
+    Response-Body: XML
+    <stats>
+        <name>String</name>
+        <experience>Float</experience>
+        <creation_date>Timestamp</creation_date>
+        <links>
+            <link rel=String href=String />
+        </links>
+    </stats>
+    */
     public function GetPlayerStats($name) {
         $xml = $this->loadXML();
         $xpath = new DOMXPath($xml);
@@ -248,6 +263,36 @@ class PlayerService {
         }
     }
 
+    /*
+    GetNaturalDisaster(playerId: int, farmingBotId: int, naturalDisasterId: int)
+    URI: https://wwwlab.cs.univie.ac.at/~kiviniemip35/player_service.php/players/{playerId}/farmingbots/{farmingBotId}/naturaldisasters/{naturalDisasterId}
+    HTTP-Method: GET 
+    Request-Body: Null
+    Response-Body:
+    {
+        "naturalDisaster": {
+            "id": int,
+            "name": float,
+            "timeoccurred": timestamp,
+            "disasterDebuffs": [
+                "debuff": {
+                    "uuid": string (uuid-format),
+                    "description": string,
+                    "effects": [
+                        string
+                    ]
+                }
+            ]
+        }
+        "links": [
+            {
+                "rel": string,
+                "href": string,
+                "method": string / array of strings
+            },
+        ]
+    }
+    */
     public function GetNaturalDisaster($playerId, $farmingBotId, $naturalDisasterId)
     {
         $xml = $this->loadXML();
@@ -262,20 +307,35 @@ class PlayerService {
     }
 
     /*
-    PARAMS:
-    $playerId: int
-    $farmingBotId: int
-    $naturalDisasterData: object
-        - id: int
-        - name: string
-        - duration: float
-        - timeoccurred: timestamp (unix)
-        - arrayOfDebuffs: array of debuff objects
-            - debuff: object
-                -   uuid: string
-                -   description: string
-                -   effects: array
-                    -   effect: string
+    CreateNaturalDisaster(playerId: int, farmingBotId: int, naturalDisasterData: customComplexType)
+    URI: https://wwwlab.cs.univie.ac.at/~kiviniemip35/player_service.php/players/{playerId}/farmingbots/{farmingBotId}/naturaldisasters
+    HTTP-Method: POST
+    Request-Body:
+    {
+        "id": int,
+        "name": float,
+        "timeoccurred": timestamp,
+        "disasterDebuffs": [
+            "debuff": {
+                "uuid": string (uuid-format),
+                "description": string,
+                "effects": [
+                    string
+                ]
+            }
+        ]
+    }
+    Response-Body:
+    {
+        "created_natural_disaster_id": int,
+        "links": [
+            {
+                "rel": string,
+                "href": string,
+                "method": string / array of strings
+            },
+        ]
+    }
     */
     public function CreateNaturalDisaster($playerId, $farmingBotId, $naturalDisasterData)
     {
@@ -313,7 +373,50 @@ class PlayerService {
         return -1;
     }
 
-    //This function assumes that we do not have partial but instead the full natural disaster data
+    /*
+    UpdateNaturalDisaster(playerId: int, farmingBotId: int, naturalDisasterData: customComplexType)
+    URI: https://wwwlab.cs.univie.ac.at/~kiviniemip35/player_service.php/players/{playerId}/farmingbots/{farmingBotId}/naturaldisasters/{naturalDisasterId}
+    HTTP-Method: PUT 
+    Request-Body:
+    {
+        "id": int,
+        "name": float,
+        "timeoccurred": timestamp,
+        "disasterDebuffs": [
+            "debuff": {
+                "uuid": string (uuid-format),
+                "description": string,
+                "effects": [
+                    string
+                ]
+            }
+        ]
+    }
+    Response-Body:
+    {
+        "updated_natural_disaster": {
+            "id": int,
+            "name": float,
+            "timeoccurred": timestamp,
+            "disasterDebuffs": [
+                "debuff": {
+                    "uuid": string (uuid-format),
+                    "description": string,
+                    "effects": [
+                        string
+                    ]
+                }
+            ]
+        },
+        "links": [
+            {
+                "rel": string,
+                "href": string,
+                "method": string / array of strings
+            },
+        ]
+    }
+    */
     public function UpdateNaturalDisaster($playerId, $farmingBotId, $naturalDisasterData)
     {
         // Load the xml
@@ -346,6 +449,23 @@ class PlayerService {
         return -1;
     }
 
+    /*
+    DeleteNaturalDisastersFromTimestamp(playerId: int, farmingBotId: int, timestamp: string)
+    URI: https://wwwlab.cs.univie.ac.at/~kiviniemip35/player_service.php/players/{playerId}/farmingbots/{farmingBotId}/naturaldisasters/deletefrom/{timestamp}
+    HTTP-Method: DELETE
+    Request-Body: Null
+    Response-Body:
+    {
+        "deleted_natural_disaster_ids": [ int ],
+        "links": [
+            {
+                "rel": string,
+                "href": string,
+                "method": string / array of strings
+            },
+        ]
+    }
+    */
     public function DeleteNaturalDisastersFromTimestamp($playerId, $farmingBotId, $timestamp)
     {
         // Load the xml
@@ -388,6 +508,50 @@ class PlayerService {
         return $deletedDisasters;
     }
 
+    /*
+    PatchNaturalDisaster(playerId: int, farmingBotId: int, naturalDisasterId: int, naturalDisasterData: customComplexType)
+    URI: https://wwwlab.cs.univie.ac.at/~kiviniemip35/player_service.php/players/{playerId}/farmingbots/{farmingBotId}/naturaldisasters/{naturalDisasterId}
+    HTTP-Method: PATCH
+    Request-Body: NOTE:: THIS CAN BE FULL OR PARTIAL OBJECT
+    {
+        "id": int,
+        "name": float,
+        "timeoccurred": timestamp,
+        "disasterDebuffs": [
+            "debuff": {
+                "uuid": string (uuid-format),
+                "description": string,
+                "effects": [
+                    string
+                ]
+            }
+        ]
+    }
+    Response-Body:
+    {
+        "patched_natural_disaster": {
+            "id": int,
+            "name": float,
+            "timeoccurred": timestamp,
+            "disasterDebuffs": [
+                "debuff": {
+                    "uuid": string (uuid-format),
+                    "description": string,
+                    "effects": [
+                        string
+                    ]
+                }
+            ]
+        },
+        "links": [
+            {
+                "rel": string,
+                "href": string,
+                "method": string / array of strings
+            },
+        ]
+    }
+    */
     public function PatchNaturalDisaster($playerId, $farmingBotId,$naturalDisasterId, $patchData)
     {
         $xml = $this->loadXML();
@@ -419,6 +583,29 @@ class PlayerService {
         return -1;
     }
 
+    /*
+    GetDebuffByUUID(playerId: int, farmingBotId: int, naturalDisasterId: int, uuid: string)
+    URI: https://wwwlab.cs.univie.ac.at/~kiviniemip35/player_service.php/players/{playerId}/farmingbots/{farmingBotId}/naturaldisasters/{naturalDisasterId}/debuffs/{uuid}
+    HTTP-Method: GET 
+    Request-Body: Null
+    Response-Body:
+    {
+        "debuff": {
+            "uuid": string (uuid-format),
+            "description": string,
+            "effects": [
+                string
+            ]
+        },
+        "links": [
+            {
+                "rel": string,
+                "href": string,
+                "method": string / array of strings
+            },
+        ]
+    }
+    */
     public function GetDebuffByUUID($playerId, $farmingBotId, $naturalDisasterId, $uuid)
     {
         $naturalDisaster = $this->GetNaturalDisaster($playerId, $farmingBotId, $naturalDisasterId);
