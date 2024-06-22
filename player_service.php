@@ -10,10 +10,26 @@ $method = $_SERVER['REQUEST_METHOD'];
 $request_body = file_get_contents('php://input');
 
 $base_path = '/~kiviniemip35/player_service.php';
+$naturaldisaster_jsonschema_postput = 'ND_POST_PUT_Schema.json';
+$naturaldisaster_jsonschema_patch = 'ND_PATCH_Schema.json';
 
-function send404($message = "") {
-    http_response_code(404);
+function sendError($code, $message = "") {
+    http_response_code($code);
     echo json_encode(['error' => 'Invalid request: ' . $message]);
+}
+
+function validate_jsonschema($json_input, $jsonschema_filepath)
+{
+
+    $tempFile = tempnam(sys_get_temp_dir(), 'json_input_') . '.json';
+    file_put_contents($tempFile, $json_input);
+
+    $command = "python3 validate_json.py $jsonschema_filepath $tempFile";
+
+    exec($command, $output, $returnCode);
+
+    unlink($tempFile);
+    return $returnCode;
 }
 
 // NOTE:: This function should not have to exist
@@ -91,9 +107,6 @@ function replaceNaturalDisasterJsonKeyValuePairs($original, $patch)
     return 0;
 }
 
-
-
-
 function naturalDisasterStdClassToDOMNode($data, $xml) {
     try
     {
@@ -104,11 +117,17 @@ function naturalDisasterStdClassToDOMNode($data, $xml) {
         $durationElement = $xml->createElement('duration', $data->duration);
         $naturalDisasterElement->appendChild($durationElement);
 
-        $dateTime = new DateTime();
-        $dateTime->setTimestamp($data->timeoccured);
+        // Depending are we dealing with epoch or normal UTC timestamp
+        if (strpos($data->timeoccurred, 'Z') !== false) {
+            $dateTime = new DateTime($data->timeoccurred);
+        } else {
+            $dateTime = new DateTime();
+            $dateTime->setTimestamp($data->timeoccurred);
+        }
         $dateTime->setTimezone(new DateTimeZone('UTC'));
-        $formattedDateTime = $dateTime->format('Y-m-d\TH:i:s.u'); // Format to 'Y-m-d\TH:i:s.u'
+        $formattedDateTime = $dateTime->format('Y-m-d\TH:i:s.u') . 'Z'; // Format to 'Y-m-d\TH:i:s.u'
         $timeOccurredElement = $xml->createElement('timeoccurred', $formattedDateTime);
+
         $naturalDisasterElement->appendChild($timeOccurredElement);
 
         foreach ($data->disasterDebuffs as $disasterDebuff) {
@@ -432,7 +451,8 @@ function handleRequests($segments, $request_type, $data = null)
                 http_response_code(200);
                 return;
             }
-            send404("HTTP Request Type not supported for /players/{playerName}/stats");
+            sendError(405, "HTTP Request Type not supported for /players/{playerName}/stats");
+            return;
         }
     }
     else if (count($segments) === 5)
@@ -447,14 +467,28 @@ function handleRequests($segments, $request_type, $data = null)
 
             if ($data === null)
             {
-                send404("Request body was null\n");
+                sendError(403, "Request body was null");
+                return;
             }
 
             if($request_type == 'POST')
             {
+                global $naturaldisaster_jsonschema_postput;
+
+                if(validate_jsonschema($data, $naturaldisaster_jsonschema_postput) == 1)
+                {
+                    sendError(403, "ERROR:: FAILED TO VALIDATE REQUEST BODY FOR POST");
+                    return;
+                }
+
                 $data_stdclass = json_decode($data);
                 $service = new PlayerService();
                 $created_natural_disaster_id = $service->CreateNaturalDisaster($playerId, $farmingBotId, $data_stdclass);
+                if($created_natural_disaster_id == -1)
+                {
+                    sendError(403, "ERROR: FAILED TO CREATE NATURAL DISASTER");
+                    return;
+                }
 
                 $hateoas_data = [
                     "created_natural_disaster_id" => $created_natural_disaster_id,
@@ -472,8 +506,9 @@ function handleRequests($segments, $request_type, $data = null)
                 http_response_code(201);
                 return;
             }
-            send404("Invalid PARAMS or HTTP Request Type not supported for /players/{playerId}/farmingbots/{farmingBotId} \
+            sendError(405, "Invalid PARAMS or HTTP Request Type not supported for /players/{playerId}/farmingbots/{farmingBotId} \
             naturaldisasters");
+            return;
         }
     }
     else if(count($segments) === 6)
@@ -489,11 +524,19 @@ function handleRequests($segments, $request_type, $data = null)
 
             if($data == null && $request_type != "GET")
             {
-                send404("Request body was null!\n");
+                sendError(403, "Request body was null!");
+                return;
             }
 
             if($request_type == 'PUT')
             {
+                global $naturaldisaster_jsonschema_postput;
+                if(validate_jsonschema($data, $naturaldisaster_jsonschema_postput) == 1)
+                {
+                    sendError(403, "ERROR:: FAILED TO VALIDATE REQUEST BODY FOR PUT");
+                    return;
+                }
+
                 $data_stdclass = json_decode($data);
                 $service = new PlayerService();
                 $updated_natural_disaster_stdclass = $service->UpdateNaturalDisaster($playerId, $farmingBotId, $data_stdclass);
@@ -537,6 +580,13 @@ function handleRequests($segments, $request_type, $data = null)
 
             if($request_type == "PATCH")
             {
+                global $naturaldisaster_jsonschema_patch;
+                if(validate_jsonschema($data, $naturaldisaster_jsonschema_patch) == 1)
+                {
+                    sendError(403, "ERROR:: FAILED TO VALIDATE REQUEST BODY FOR PUT");
+                    return;
+                }
+
                 $service = new PlayerService();
                 $patched_natural_disaster = $service->PatchNaturalDisaster($playerId, $farmingBotId, $naturalDisasterId, $data);
 
@@ -556,8 +606,9 @@ function handleRequests($segments, $request_type, $data = null)
                 return;
             }
 
-            send404("Invalid PARAMS or HTTP Request Type not supported for /players/{playerId}/farmingbots/{farmingBotId} \
+            sendError(405, "Invalid PARAMS or HTTP Request Type not supported for /players/{playerId}/farmingbots/{farmingBotId} \
             naturaldisasters/{naturalDisasterId}");
+            return;
         }
     }
     else if(count($segments) === 7)
@@ -593,12 +644,14 @@ function handleRequests($segments, $request_type, $data = null)
                 http_response_code(200);
                 return;
             }
-            send404("Invalid PARAMS or HTTP Request Type not supported for /players/{playerId}/farmingbots/{farmingBotId}\
+            sendError(405, "Invalid PARAMS or HTTP Request Type not supported for /players/{playerId}/farmingbots/{farmingBotId}\
             naturaldisasters/deletefrom/{timestamp}");
+            return;
         }
     }
     // Make sure to return from all of the other valid branches
-    send404("URI NOT FOUND");
+    sendError(404, "URI NOT FOUND");
+    return;
 }
 
 handleRequests($segments, $method, $request_body);

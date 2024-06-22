@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "name": "Latest Earthquake",
+  "duration": 20.123,
+  "timeoccurred": 1717429017,
+  "disasterDebuffs": [
+    {
+      "uuid": "255a7517-6762-47e3-86cd-e59bdd83b8bc",
+      "description": "Bleeding debuff",
+      "effects": ["Lose one health every 2 minutes"]
+    }
+  ]
+}

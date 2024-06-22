@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interop.cs.univie/payment.schema.json",
+  "title": "NaturalDisaster PATCH Schema",
+  "description": "NaturalDisaster PATCH validation schema",
+
+  "type": "object",
+  "properties": {
+    "id": { "type": "integer" },
+    "name": { "type": "string" },
+    "duration": { "type": "number" },
+    "timeoccurred": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "description": "Unix epoch time in seconds"
+        },
+        {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 formatted timestamp with 'Z' indicating UTC"
+        }
+      ]
+    },
+    "disasterDebuffs": { "$ref": "#/$defs/disasterDebuffs" }
+  },
+  "anyOf": [
+    { "required": ["id"] },
+    { "required": ["name"] },
+    { "required": ["duration"] },
+    { "required": ["timeoccurred"] },
+    { "required": ["disasterDebuffs"] }
+  ],
+  "additionalProperties": false,
+
+  "$defs": {
+    "disasterDebuffs": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+            "type": "object",
+            "properties": {
+                "uuid": { "type": "string", "format": "uuid" },
+                "description": { "type": "string" },
+                "effects": { "$ref": "#/$defs/effects" }
+            },
+            "anyOf": [
+                { "required": ["uuid"] },
+                { "required": ["description"] },
+                { "required": ["effects"] }
+            ],
+            "additionalProperties": false
+        }
+    },
+
+    "effects": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+            "type": "string"
+        }
+    }
+  }
+}
