@@ -25,7 +25,6 @@ function isValidUUID($uuid) {
 
 function validate_jsonschema($json_input, $jsonschema_filepath)
 {
-
     $tempFile = tempnam(sys_get_temp_dir(), 'json_input_') . '.json';
     file_put_contents($tempFile, $json_input);
 
@@ -65,46 +64,43 @@ function replaceNaturalDisasterJsonKeyValuePairs($original, $patch)
 {
     // Patch it with the fields from user input
     foreach ($patch as $key => $value) {
-        if (!isset($original->{$key}) && $key != "disasterDebuffs") {
-            print_r("INVALID KEY\n");
-            print_r($key);
-            return "INVALID KEYS IN PATCH";
+        // If we find an array or object
+        if (is_object($value) && is_object($original->{$key}))
+        {
+            replaceNaturalDisasterJsonKeyValuePairs($original->{$key}, $value);
         }
-
-        // Special case for 'disasterDebuffs' array
-        if ($key === 'disasterDebuffs') {
-            foreach ($value as $newDebuff) {
-                $found = false;
-
-                // Iterate the existing debuffs, try to find one
-                // with same UUID, if found, patch its data
-
-                foreach ($original->disasterDebuffs as $index => $existingDebuff) {
-                    if ($newDebuff->uuid === $existingDebuff->uuid) {
-                        // Update existing debuff
-                        $result = replaceNaturalDisasterJsonKeyValuePairs($original->disasterDebuffs[$index], $newDebuff);
-                        if ($result === "INVALID KEYS IN PATCH") {
-                            return "INVALID KEYS IN PATCH";
+        else if(is_array($value) && is_array($original->{$key}))
+        {
+            foreach($value as $patch_item)
+            {
+                // Iterate through the list
+                // Look for object with same uuid or id and patch it's data
+                if(is_object($patch_item))
+                {
+                    $found = false;
+                    foreach($original->{$key} as $original_item)
+                    {
+                        if($patch_item->uuid === $original_item->uuid)
+                        {
+                            replaceNaturalDisasterJsonKeyValuePairs($original_item, $patch_item);
+                            $found = true;
+                            break;
                         }
-                        $found = true;
-                        break;
+                    }
+                    if(!$found)
+                    {
+                        $original->{$key}[] = $patch_item;
                     }
                 }
-
-                // Append new debuff if not found
-                if (!$found) {
-                    $original->disasterDebuffs[] = $newDebuff;
+                else
+                {
+                    $original->{$key} = $value;
                 }
             }
-        } elseif (is_object($value) && is_object($original->{$key}) ||
-            is_array($value) && is_array($original->{$key})) {
-            // Call this recursively if we are dealing with objects or arrays
-            $result = replaceNaturalDisasterJsonKeyValuePairs($original->{$key}, $value);
-            if ($result === "INVALID KEYS IN PATCH") {
-                return "INVALID KEYS IN PATCH";
-            }
-        } else {
-            // Update the original object property with patch value
+        }
+        else
+        {
+            // Update the object key with patch value
             $original->{$key} = $value;
         }
     }
@@ -791,7 +787,7 @@ function handleRequests($segments, $request_type, $data = null)
                 global $naturaldisaster_jsonschema_patch;
                 if(validate_jsonschema($data, $naturaldisaster_jsonschema_patch) == 1)
                 {
-                    sendError(403, "ERROR:: FAILED TO VALIDATE REQUEST BODY FOR PUT");
+                    sendError(403, "ERROR:: FAILED TO VALIDATE REQUEST BODY FOR PATCH");
                     return;
                 }
 

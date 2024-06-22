@@ -4,16 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>REST Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #343a40;
+    }
+    form {
+      display: inline-block;
+      margin-top: 20px;
+    }
+    button {
+      display: block;
+      width: 250px;
+      padding: 10px;
+      margin: 10px auto;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
   <h1>REST Operations</h1>
   <form action="client.php" method="post">
-    <button type="submit" name="action" value="GET">GET</button>
-    <button type="submit" name="action" value="POST">POST</button>
-    <button type="submit" name="action" value="PUT">PUT</button>
-    <button type="submit" name="action" value="DELETE">DELETE</button>
+    <button type="submit" name="action" value="GET_STATS">GET PLAYER STATS</button>
+    <button type="submit" name="action" value="GET_ND">GET NATURAL DISASTER</button>
+    <button type="submit" name="action" value="POST">POST NATURAL DISASTER</button>
+    <button type="submit" name="action" value="PUT">PUT NATURAL DISASTER</button>
+    <button type="submit" name="action" value="DELETE">DELETE NATURAL DISASTER</button>
+    <button type="submit" name="action" value="PATCH">PATCH NATURAL DISASTER</button>
+    <button type="submit" name="action" value="GET_DEBUFF">GET DEBUFF</button>
   </form>
   <div id="result"></div>
 </body>
 </html>
-
